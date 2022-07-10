@@ -11,13 +11,13 @@ export const MemoList: FC<Props> = props => {
 
   return (
     <SContainer>
-      <p>メモ一覧</p>
+      <p>感想一覧</p>
       <ul>
         {memos.map((memo, index) => (
           <li key={memo}>
             <SMemoWrapper>
               <p>{memo}</p>
-              <SButton onClick={() => onClickDelete(index)}>削除</SButton>
+              <Button onClick={() => onClickDelete(index)}>削除</Button>
             </SMemoWrapper>
           </li>
         ))}
@@ -26,7 +26,7 @@ export const MemoList: FC<Props> = props => {
   );
 };
 
-const SButton = styled.button`
+const Button = styled.button`
   margin-left: 16px;
 `;
 
