@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import { ChangeEvent, useState, useCallback, FC } from "react";
 import styled from "styled-components";
 import { MemoList } from "./MemoList";
