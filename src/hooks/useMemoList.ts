@@ -5,7 +5,8 @@ export const useMemoList = () => {
 
   const addTodo = useCallback((text:string) => {
     const newMemos = [...memos];
-    newMemos.push(text);
+    const thanks = ["ENDさん企画ありがとう！ ", "ENDさん誕生日おめでとう! ",  "けんちゃん誕生日おめでとう！ "  ]
+    newMemos.push( text + "　　" + " そういえば  " + thanks[Math.floor(Math.random() * thanks.length)]);
     setMemos(newMemos);
   }, [memos]);
 
